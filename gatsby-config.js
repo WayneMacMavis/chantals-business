@@ -10,23 +10,23 @@ module.exports = {
       },
       {
         name:'About',
-        link:'/page-2'
+        link:'/about'
       },
       {
         name:'Services',
-        link:'/page-3'
+        link:'/services'
       },
       {
         name:'Resources',
-        link:'/page-4'
+        link:'/resources'
       },
       {
         name:'Contact',
-        link:'/page-5'
+        link:'/contact'
       },
       {
         name:'Blog',
-        link:'/page-6'
+        link:'/blog'
       },
     ]
   },

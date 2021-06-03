@@ -5,11 +5,9 @@ import Seo from "../components/seo"
 
 import "../assets/stylesheets/contact.css"
 
-const ThirdPage = () => (
+const contactPage = () => (
   <Layout>
     <Seo title="Page five" />
-    <h1>Hi from the 5th page</h1>
-    <p>Welcome to page 5</p>
     <div className="modal">
     <form method="post" action="https://formspree.io/f/mvodawpn">
     <label>
@@ -17,6 +15,9 @@ const ThirdPage = () => (
   </label>
     <label>
     <input type="email" name="email" placeholder="Email" />
+  </label>
+  <label>
+    <input type="country" name="country" placeholder="Country" />
   </label>
   <label>
     <input type="text" name="subject" placeholder="Subject"/>
@@ -29,4 +30,4 @@ const ThirdPage = () => (
   </Layout>
 )
 
-export default ThirdPage
+export default contactPage
