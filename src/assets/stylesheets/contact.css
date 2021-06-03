@@ -17,7 +17,7 @@ textarea {
 input[type=submit], [type=reset] {
   position: relative;
   left: -479px;
-  bottom: -60px;
+  bottom: -30px;
   background-color: #04AA6D;
   color: white;
   margin-right: 5px;
@@ -38,7 +38,11 @@ input[type=reset]:hover {
 
 /* Add a background color and some padding around the form */
 .modal {
+  position: relative;
+  top: 40px;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px 100px 20px 20px;
+  box-shadow: 5px 10px 30px black;
+  opacity: 0.9;
 }

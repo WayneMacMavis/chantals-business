@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `So you want better results for your writing?`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Editing, Copy Writing, Proof Reading`,
+    description: `Professional business page for all your editorial needs`,
     author: `@Wayne Mac Mavis`,
     menuLinks:[
       {
