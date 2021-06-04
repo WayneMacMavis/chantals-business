@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Editing, Copy Writing, Proof Reading`,
+    title: `Editing, Copywriting, Proofreading`,
     description: `Professional business page for all your editorial needs`,
     author: `@Wayne Mac Mavis`,
     menuLinks:[
@@ -37,7 +37,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -45,13 +45,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `editing-proofreading-copywriting`,
+        short_name: `editing`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,

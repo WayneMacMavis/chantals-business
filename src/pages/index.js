@@ -13,6 +13,7 @@ const IndexPage = () => (
       textAlign: `center`,
       bottom: `20px`,
       color: `whitesmoke`,
+      textShadow: `2px 2px black`,
       }}>Editorial peace of mind for non-fiction writers</h1>
     <div 
     style={{

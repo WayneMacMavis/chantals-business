@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 const Navigation = ({ menuLinks }) => (
   <header
     style={{
+      textAlign:`center`,
       position: `sticky`,
       height: `50px`,
       background: `aqua`,
@@ -13,11 +14,12 @@ const Navigation = ({ menuLinks }) => (
   >
     <div
       style={{
-        float: `right`,
-        marginTop: `10px`
+        display: `flex`,
+        justifyContent: `center`,
+        padding: `5px`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0, top: `10px`, }}>
         <Link
           to="/"
           style={{
