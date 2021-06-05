@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 input[type=text], [type=email], [type=country], select, textarea {
   width: 60%; /* Full width */
   padding: 12px; /* Some padding */ 
@@ -6,7 +9,7 @@ input[type=text], [type=email], [type=country], select, textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 2px; /* Add a top margin */
   margin-bottom: 10px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize:vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 textarea {
@@ -17,7 +20,7 @@ textarea {
 /* Style the submit button with a specific background color etc */
 input[type=submit], [type=reset] {
   position: relative;
-  left: -27vw;
+  left: -31vw;
   bottom: -30px;
   background-color: #90CDF4;
   color: white;
@@ -44,20 +47,31 @@ input[type=reset]:hover {
   width: 80%;
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px 100px 20px 20px;
-  margin-bottom: 50px;
+  padding: 20px 10px 2vh 1vh;
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.5);
   opacity: 0.9;
+  font-size: 25px;
+  font-family: 'Caveat', cursive;
 }
 
 .contact-icons {
   position: absolute;
   right: 20px;
-  left: 420px;
+  left: 460px;
+  font-size: 20px;
   /* top: 3px; */
   display: flex;
   flex-direction: column;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
 }
 
 .phone {
@@ -68,25 +82,26 @@ input[type=reset]:hover {
 .email {
   position: absolute;
   top: 100px;
-  width: 1px;
 }
 
 h3 {
   position: relative;
-  font-size: 20px;
+  font-size: 25px;
   text-align: left;
   padding-left: -20px;
-  padding-top: 5px;
+  padding-top: 1px;
   top: 50px;
-  right: -50px;
-  
+  right: -55px;
+  color: black;
+  font-family: 'Caveat', cursive;
+  letter-spacing: 1px;
 }
 
 .icons-container {
-  position: absolute;
-  right: 5px;
-  left: 34vw;
-  bottom: 55px;
+  position: fixed;
+  right: 100px;
+  left: 50vw;
+  bottom: 150px;
   display: flex;
   flex-wrap: wrap;
   opacity: 1;
@@ -94,7 +109,7 @@ h3 {
 
 .icon {
   /* width: 80px; */
-  padding: 10px;
+  padding: 5px;
   opacity: 0.8;
   font-size: 24px;
 }
@@ -105,4 +120,8 @@ h3 {
 
 iconfaFacebookSquare:hover {
   font-size: 27px;
+}
+
+.removelinkdefault {
+  text-decoration: none !important;
 }

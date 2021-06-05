@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faListAlt, faCheckSquare} from '@fortawesome/free-regular-svg-icons'
 import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import Background from "../assets/images/contactbg.jpg"
 import "../assets/stylesheets/contact.css"
@@ -24,10 +23,10 @@ const contactPage = () => (
     <div className="modal">
     <div className="contact-icons">
     <h3>0761234567</h3>
-    <h3>chanty@gmail.com</h3>
     <FontAwesomeIcon className="phone" icon={faPhoneAlt} size="2x" color="#b6b6b6"/>
-    <a href="mailto:">
+    <a href="mailto:chantalj12@gmail.com">
     <FontAwesomeIcon className="email" icon={faEnvelope} size="2x" color="#b6b6b6"/>
+    <h3>chantalj12@gmail.com</h3>
     </a>
     </div>
     <div className="icons-container">

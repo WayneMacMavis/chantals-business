@@ -41,7 +41,7 @@ const Navigation = ({ menuLinks }) => (
                     padding: `0.3rem`,
                   }}
                 >
-                  <Link activeStyle={{ color: "red" }} style={{ color: `black` }} to={link.link}>
+                  <Link style={{ color: `black` }} to={link.link}>
                     {link.name}
                   </Link>
                 </li>
