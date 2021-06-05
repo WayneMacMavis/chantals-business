@@ -17,9 +17,9 @@ textarea {
 /* Style the submit button with a specific background color etc */
 input[type=submit], [type=reset] {
   position: relative;
-  left: -479px;
+  left: -27vw;
   bottom: -30px;
-  background-color: #04AA6D;
+  background-color: #90CDF4;
   color: white;
   margin-right: 5px;
   padding: 4px 15px;
@@ -30,11 +30,11 @@ input[type=submit], [type=reset] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #1bbacf;
 }
 
 input[type=reset]:hover {
-  background-color: #45a049;
+  background-color: #1bbacf;
 }
 
 /* Add a background color and some padding around the form */
@@ -50,21 +50,59 @@ input[type=reset]:hover {
   opacity: 0.9;
 }
 
+.contact-icons {
+  position: absolute;
+  right: 20px;
+  left: 420px;
+  /* top: 3px; */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.phone {
+  position: absolute;
+  top: 40px;
+}
+
+.email {
+  position: absolute;
+  top: 100px;
+  width: 1px;
+}
+
+h3 {
+  position: relative;
+  font-size: 20px;
+  text-align: left;
+  padding-left: -20px;
+  padding-top: 5px;
+  top: 50px;
+  right: -50px;
+  
+}
+
 .icons-container {
   position: absolute;
-  right: 50px;
-  left: 430px;
-  bottom: 25px;
+  right: 5px;
+  left: 34vw;
+  bottom: 55px;
   display: flex;
   flex-wrap: wrap;
+  opacity: 1;
 }
 
 .icon {
-  width: 60px;
+  /* width: 80px; */
   padding: 10px;
-  opacity: 0.7;
+  opacity: 0.8;
+  font-size: 24px;
 }
 
 .icon:hover {
   opacity: 1;
+}
+
+iconfaFacebookSquare:hover {
+  font-size: 27px;
 }

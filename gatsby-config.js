@@ -6,7 +6,8 @@ module.exports = {
     menuLinks:[
       {
         name:'Home',
-        link:'/'
+        link:'/',
+        activeStyle: 'green',
       },
       {
         name:'About',
@@ -31,6 +32,7 @@ module.exports = {
     ]
   },
   plugins: [
+    `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

@@ -50,7 +50,7 @@ const Layout = ({ children }) => {
         >
           Built by
           {` `}
-          <a href="https://www.gatsbyjs.com">Wayne Mac Mavis</a>,
+          <a href="https://web.facebook.com/Wayne.mac.mavis/">Wayne Mac Mavis</a>,
           © {new Date().getFullYear()}
         </footer>
       </div>

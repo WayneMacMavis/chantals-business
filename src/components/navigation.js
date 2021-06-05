@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
+
 const Navigation = ({ menuLinks }) => (
   <header
     style={{
@@ -40,7 +41,7 @@ const Navigation = ({ menuLinks }) => (
                     padding: `0.3rem`,
                   }}
                 >
-                  <Link style={{ color: `black` }} to={link.link}>
+                  <Link activeStyle={{ color: "red" }} style={{ color: `black` }} to={link.link}>
                     {link.name}
                   </Link>
                 </li>
