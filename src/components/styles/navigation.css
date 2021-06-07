@@ -1,0 +1,39 @@
+header {
+    text-align: center;
+    position: relative;
+    height: 50px;
+    background: rgb(43, 163, 172);
+    opacity: 0.8;
+    box-shadow: 1px 2px 20px black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.h1 {
+    margin: 0;
+    top: 10px;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex: 1;
+}
+
+li {
+    list-style-type: none;
+    padding: 0.3rem;
+}
+
+.active {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+  }

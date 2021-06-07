@@ -44,7 +44,7 @@ input[type=reset]:hover {
 .modal {
   position: relative;
   top: 10px;
-  width: 80%;
+  width: 100%;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px 10px 2vh 1vh;
@@ -56,9 +56,9 @@ input[type=reset]:hover {
 
 .contact-icons {
   position: absolute;
-  right: 20px;
-  left: 460px;
-  font-size: 20px;
+  right: 5px;
+  left: 560px;
+  font-size: 15px;
   /* top: 3px; */
   display: flex;
   flex-direction: column;
@@ -72,6 +72,10 @@ a {
 a:hover {
   text-decoration: underline;
   text-decoration-color: black;
+}
+
+a:active {
+  color: crimson;
 }
 
 .phone {
@@ -90,8 +94,8 @@ h3 {
   text-align: left;
   padding-left: -20px;
   padding-top: 1px;
-  top: 50px;
-  right: -55px;
+  top: 45px;
+  right: -45px;
   color: black;
   font-family: 'Caveat', cursive;
   letter-spacing: 1px;
@@ -99,9 +103,10 @@ h3 {
 
 .icons-container {
   position: fixed;
+  top: 450px;
   right: 100px;
-  left: 50vw;
-  bottom: 150px;
+  left: 62vw;
+  bottom: 25vh;
   display: flex;
   flex-wrap: wrap;
   opacity: 1;
@@ -120,8 +125,4 @@ h3 {
 
 iconfaFacebookSquare:hover {
   font-size: 27px;
-}
-
-.removelinkdefault {
-  text-decoration: none !important;
 }

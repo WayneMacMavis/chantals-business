@@ -1,47 +1,21 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
+import "../components/styles/navigation.css"
 
-const Navigation = ({ menuLinks }) => (
-  <header
-    style={{
-      textAlign:`center`,
-      position: `sticky`,
-      height: `50px`,
-      background: `aqua`,
-      opacity: `0.8`,
-      boxShadow: `1px 2px 20px black`,
-    }}
-  >
-    <div
-      style={{
-        display: `flex`,
-        justifyContent: `center`,
-        padding: `5px`,
-      }}
-    >
-      <h1 style={{ margin: 0, top: `10px`, }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-        </Link>
-      </h1>
+const Navigation = ({ menuLinks }) => {
+
+  return (
+  <header>
+    <div className="container">
       <div>
           <nav>
-            <ul style={{ display: "flex", flex: 1 }}>
+            <ul>
               {menuLinks.map(link => (
                 <li
                   key={link.name}
-                  style={{
-                    listStyleType: `none`,
-                    padding: `0.3rem`,
-                  }}
                 >
-                  <Link style={{ color: `black` }} to={link.link}>
+                  <Link className="nav-links" to={link.link} activeStyle={{color: 'rgb(0, 123, 160)', textDecoration: 'underline'}}>
                     {link.name}
                   </Link>
                 </li>
@@ -51,6 +25,8 @@ const Navigation = ({ menuLinks }) => (
         </div>
     </div>
   </header>
-)
+  )
+              }
+            
 
 export default Navigation

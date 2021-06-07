@@ -5,9 +5,10 @@ import Seo from "../components/seo"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import Background from "../assets/images/contactbg.jpg"
-import "../assets/stylesheets/contact.css"
 import { faFacebookSquare, faInstagramSquare, faLinkedin, faYoutubeSquare } from "@fortawesome/free-brands-svg-icons"
+
+import Background from "../assets/images/contactbg.jpg"
+import "../components/styles/contact.css"
 
 const contactPage = () => (
   <Layout>
@@ -26,7 +27,7 @@ const contactPage = () => (
     <FontAwesomeIcon className="phone" icon={faPhoneAlt} size="2x" color="#b6b6b6"/>
     <a href="mailto:chantalj12@gmail.com">
     <FontAwesomeIcon className="email" icon={faEnvelope} size="2x" color="#b6b6b6"/>
-    <h3>chantalj12@gmail.com</h3>
+    <h3>chantaljosepheditor@gmail.com</h3>
     </a>
     </div>
     <div className="icons-container">

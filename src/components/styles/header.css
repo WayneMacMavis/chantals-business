@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+.head {
+    background: pink;
+    height: 60px;
+    opacity: 0.8;
+}
+
+.head-h1 {
+    text-align: center; 
+    vertical-align: text-top; 
+    font-family: 'Cinzel', serif;
+    font-size: 26px;
+}
+
+.head-h2 {
+    vertical-align: text-top;
+    text-align: center;
+    margin-top: -27px;
+    font-family: 'Tangerine', cursive;
+    font-size: 29px;
+    font-weight: bold;
+    text-decoration: underline;
+}

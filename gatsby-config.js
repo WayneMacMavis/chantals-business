@@ -7,7 +7,6 @@ module.exports = {
       {
         name:'Home',
         link:'/',
-        activeStyle: 'green',
       },
       {
         name:'About',
@@ -35,6 +34,16 @@ module.exports = {
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        cssLoaderOptions: {
+          modules: {
+            exportLocalsConvention: 'camelCaseOnly'
+          }
+        }
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
