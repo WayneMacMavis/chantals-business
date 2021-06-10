@@ -10,6 +10,7 @@ import { faFacebookSquare, faInstagramSquare, faLinkedin, faYoutubeSquare } from
 import Background from "../assets/images/contactbg.jpg"
 import "../components/styles/contact.css"
 
+
 const contactPage = () => (
   <Layout>
     <Seo title="Page five" />
@@ -22,28 +23,6 @@ const contactPage = () => (
       minHeight: `100%`,
       zIndex: `-10`,}}></div>
     <div className="modal">
-    <div className="contact-icons">
-    <h3>0761234567</h3>
-    <FontAwesomeIcon className="phone" icon={faPhoneAlt} size="2x" color="#b6b6b6"/>
-    <a href="mailto:chantalj12@gmail.com">
-    <FontAwesomeIcon className="email" icon={faEnvelope} size="2x" color="#b6b6b6"/>
-    <h3>chantaljosepheditor@gmail.com</h3>
-    </a>
-    </div>
-    <div className="icons-container">
-    <a className="icon" href="https://web.facebook.com/ChantalJosephEditor">
-    <FontAwesomeIcon icon={faFacebookSquare} size="2x" color="#1bbacf"/>
-    </a>
-    <a className="icon" href="/">
-    <FontAwesomeIcon icon={faInstagramSquare} size="2x" color="#1bbacf"/>
-    </a>
-    <a className="icon" href="/">
-    <FontAwesomeIcon icon={faLinkedin} size="2x" color="#1bbacf"/>
-    </a>
-    <a className="icon" href="/">
-    <FontAwesomeIcon icon={faYoutubeSquare} size="2x" color="#1bbacf"/>
-    </a>
-    </div>
     <form method="post" action="https://formspree.io/f/mvodawpn">
     <label>
     <input type="text" name="name" placeholder="Name and Surname" />
@@ -62,6 +41,28 @@ const contactPage = () => (
   </label>
   <input type="submit" value="Send"/>
   <input type="reset" value="Clear" />
+  <div className="contact-icons">
+    <FontAwesomeIcon className="phone" icon={faPhoneAlt} size="2x" color="#b6b6b6"/>
+    <h3>0761234567</h3>
+    <a href="mailto:chantaljosepheditor@gmail.com">
+    <FontAwesomeIcon className="email" icon={faEnvelope} size="2x" color="#b6b6b6"/>
+    <h3>chantaljosepheditor@gmail.com</h3>
+    </a>
+    </div>
+  <div className="icons-container">
+    <a className="icon" href="https://web.facebook.com/ChantalJosephEditor">
+    <FontAwesomeIcon icon={faFacebookSquare} size="2x" />
+    </a>
+    <a className="icon" href="/">
+    <FontAwesomeIcon icon={faInstagramSquare} size="2x" />
+    </a>
+    <a className="icon" href="/">
+    <FontAwesomeIcon icon={faLinkedin} size="2x" />
+    </a>
+    <a className="icon" href="/">
+    <FontAwesomeIcon icon={faYoutubeSquare} size="2x" />
+    </a>
+    </div>
 </form>
 </div>
   </Layout>
