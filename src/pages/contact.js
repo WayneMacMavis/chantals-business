@@ -90,8 +90,8 @@ const contactPage = () => (
           <FontAwesomeIcon icon={faYoutube} size="2x" />
           </a>
           </div>
-          <div className="app-contact"><FontAwesomeIcon className="phone" icon={faPhoneAlt} size="2x" /> +27761234567
-          <a href="mailto:chantaljosepheditor@gmail.com"><FontAwesomeIcon className="email" icon={faEnvelope} size="2x" /> chantaljosepheditor</a>
+          <div className="app-contact"><FontAwesomeIcon className="phone" icon={faPhoneAlt} size="1x" /> +27761234567
+          <a href="mailto:chantaljosepheditor@gmail.com"><FontAwesomeIcon className="email" icon={faEnvelope} size="1x" /> chantaljosepheditor</a>
           </div>
         </div>
         <div className="screen-body-item">
