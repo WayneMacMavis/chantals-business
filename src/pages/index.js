@@ -5,7 +5,8 @@ import Seo from "../components/seo"
 
 import Video from "../assets/videos/homeBg.mp4"
 
-const IndexPage = () => (
+const IndexPage = () => {
+  return (
   <Layout>
     <Seo title="Home" />
     <h1 style={{
@@ -33,6 +34,7 @@ const IndexPage = () => (
       backgroundSize: `cover`,
       left: `0px`,
       top: `0px`,
+      marginRight: `10px`,
       minWidth: `100%`,
       minHeight: `100%`,
     }}>
@@ -53,6 +55,6 @@ const IndexPage = () => (
     }}></div>
     </div>
     </Layout>
-)
-
+    )
+  }
 export default IndexPage

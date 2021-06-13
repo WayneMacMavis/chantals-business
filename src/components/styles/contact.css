@@ -1,147 +1,218 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+/* font-family: 'Caveat', cursive; */
 
-input[type=text], [type=email], [type=country], select, textarea, [type=submit], [type=reset] {
-  width: 60%; /* Full width */
-  /* height: 80%; */
-  padding: 12px; /* Some padding */ 
-  border: 2px solid #ccc; /* Gray border */
-  border-radius: 5px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 2px; /* Add a top margin */
-  margin-bottom: 10px; /* Bottom margin */
-  float: right;
-  resize:vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-textarea {
-  height: 100px;
-  line-height: 20px;
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit], [type=reset] {
-  position: relative;
-  background-color: #90CDF4;
-  width: 100px;
-  color: white;
-  right: -60%;
-  bottom: -150px;
-  padding: 4px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit] {
-  right: -320px;
-}
-
-form {
-  position: relative;
-  height: 80%;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #1bbacf;
-}
-
-input[type=reset]:hover {
-  background-color: #1bbacf;
-}
-
-/* Add a background color and some padding around the form */
-.modal {
-  position: relative;
-  top: 10px;
-  height: 75vh;
-  width: 80vw;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px 10px 2vh 1vh;
-  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.5);
-  opacity: 0.9;
-  font-size: 25px;
+button, input, textarea {
   font-family: 'Caveat', cursive;
-  z-index: 0;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  line-height: 13px;
 }
 
-.contact-icons {
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgb(90, 88, 88);
+  box-shadow: 0 0 0px 1000px rgba(201, 198, 198, 0.329) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
   position: relative;
-  left: 50px;
-  top: 100px;
-  /* right: -600px; */
-  /* margin: 0; */
-  /* margin-right: -300px; */
-  /* height: 100%; */
-  /* width: 30%; */
-  font-size: 15px;
+  background: #d6d5d5e0;
+  border-radius: 15px;
+  box-shadow: 5px 10px 25px #1d1d1dda;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  /* z-index: -10000000; */
 }
 
-a {
-  color: #ccc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #1bbacf;
-  text-decoration-color: rgb(255, 42, 131);
-}
-
-a:active {
-  color: rgb(255, 160, 242);
-}
-
-h3,.email,.phone {
-  position: relative;
-  /* top:-300px; */
-  font-size: 25px;
-  color: black;
-  font-family: 'Caveat', cursive;
-  letter-spacing: 1px;
+.app-title {
   display: flex;
   flex-direction: column;
-  justify-self: flex-start;
-  align-items: flex-end;
-  /* z-index: 10000000000000000000099999999; */
+  position: relative;
+  color: #ea1d6f;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Caveat', cursive;
 }
 
-.phone, .email {
-  /* position: relative; */
-  left: -40px;
-  color: #ccc;
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 50px;
+  height: 4px;
+  background: #ea1d6f;
 }
 
 .icons-container {
   position: relative;
-  top: -100px;
-  left: 50px;
-  height:50%;
-  width: 90%;
-  /* top: 400px; */
-  /* right: 70px; */
-  /* margin-left: 300px; */
-  bottom: 299px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  /* margin-right: -100px; */
-  opacity: 1;
-  /* z-index: -1000000000000; */
+  flex-direction: row;
+  top: 230px;
+  left: 0px;
 }
 
 .icon {
-  /* width: 80px; */
-  padding: 5px;
-  opacity: 0.8;
-  font-size: 24px;
-  display: flex;
+  margin: 3px;
+  color: #918c8cbb;
+}
+
+.icon:hover {
+  color: rgba(202, 37, 128, 0.849);
+}
+
+.app-contact {
+  margin-top: -10px;
+  margin-right: 20px;
+  font-size: 25px;
+  font-family: 'Caveat', cursive;
+  text-align: center;
+  color: #888;
+}
+
+.phone, .email {
+  right: -200px;
+  font-size: 25px;
+  margin-top: 5px;
+  color: #999;
+}
+
+.phone {
+  position: relative;
+  margin-right: -30px;
+  right: 25px;
+}
+
+.fa-envelope {
+  position: relative;
+  margin-right: 20px;
+  right: 160px;
+  top: 30px;
+}
+
+a {
+  color: #888;
+}
+
+.app-form-group {
+  margin-bottom: 1px;
+}
+
+.app-form-group.message {
+  margin-top: 1px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #ea1d6f;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #b9134f;
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    right: -65px;
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 2px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+  .fa-envelope, .fa-phone-alt {
+    display: none;
+  }
 }
