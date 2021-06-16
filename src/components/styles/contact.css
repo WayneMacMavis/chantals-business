@@ -31,9 +31,11 @@ select:-webkit-autofill:focus {
 
 .screen {
   position: relative;
+  top: 5vh;
   background: #d6d5d5e0;
   border-radius: 15px;
   box-shadow: 5px 10px 25px #1d1d1dda;
+  z-index: -10;
 }
 
 .screen:after {
@@ -41,8 +43,8 @@ select:-webkit-autofill:focus {
   display: block;
   position: absolute;
   top: 0;
-  left: 20px;
-  right: 20px;
+  left: 4px;
+  right: 4px;
   bottom: 0;
   border-radius: 15px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, .4);

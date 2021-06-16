@@ -15,6 +15,7 @@ const IndexPage = () => {
       bottom: `20px`,
       color: `whitesmoke`,
       textShadow: `2px 2px black`,
+      fontFamily: `Cinzel, serif`,
       }}>Editorial peace of mind for non-fiction writers</h1>
     <div 
     style={{

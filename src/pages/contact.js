@@ -100,7 +100,7 @@ const contactPage = () => (
               <input className="app-form-control" type="text" name="name" placeholder="NAME AND SURNAME" />
             </li>
             <li className="app-form-group">
-              <input className="app-form-control" type="email" name="email" placeholder="EMAIL" autocomplete="email"/>
+              <input className="app-form-control" type="email" name="email" rel="reply-to" placeholder="EMAIL" autoComplete="email"/>
             </li>
             <li className="app-form-group">
               <input className="app-form-control" type="tel" name="phone" placeholder="PHONE" />

@@ -8,8 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
+import HeaderBtn from "./header-btn"
 import Navigation from "./navigation"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons"
@@ -32,7 +31,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <HeaderBtn siteTitle={data.site.siteMetadata.title} />
       <Navigation menuLinks={data.site.siteMetadata.menuLinks} />
       <div
         style={{

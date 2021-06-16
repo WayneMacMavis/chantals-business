@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 
 .head {
+    position: relative;
     background: pink;
     height: 60px;
     opacity: 0.8;
@@ -15,11 +16,28 @@
 }
 
 .head-h2 {
+    position: relative;
     vertical-align: text-top;
     text-align: center;
+    top: -30px;
     margin-top: -27px;
     font-family: 'Tangerine', cursive;
     font-size: 29px;
     font-weight: bold;
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.head-h3 {
+    position: relative;
+    float: right;
+    vertical-align: text-top;
+    text-align: center;
+    top: -50px;
+    margin-top: -27px;
+    font-family: 'Tangerine', cursive;
+    font-size: 29px;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
 }

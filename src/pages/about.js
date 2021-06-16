@@ -1,13 +1,11 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Dashboard from "../components/Dashboard"
 import Img from "../assets/images/img.jpg"
 
 const aboutPage = () => (
   <Layout>
     <Seo title="Page two" />
-    <Dashboard></Dashboard>
     <div style={{backgroundImage: `url(${Img})`, overflowY: `hidden`,
       position: `absolute`,
       backgroundSize: `cover`,

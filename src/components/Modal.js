@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import './modal.css';
 
 const Modal = ({ handleClose, show, children }) => {
@@ -8,8 +10,8 @@ const Modal = ({ handleClose, show, children }) => {
     <div className={showHideClassName}>
       <section className="modal-main">
         {children}
-        <button type="button" onClick={handleClose}>
-          Close
+        <button className="closeBtn" type="button" onClick={handleClose}>
+        <FontAwesomeIcon icon={faTimes} size="1x" />
         </button>
       </section>
     </div>
