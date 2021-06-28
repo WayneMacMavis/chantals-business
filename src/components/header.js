@@ -1,58 +1,70 @@
-import React, { Component } from "react"
+import React, { useState, useEffect } from "react"
+import {useSpring, animated} from "react-spring"
+// import useLocalStorage from './use-local-storage';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons'
+
 import "../components/styles/header.css"
 import Modal from './Modal';
-// import HeaderBtn from './header-btn';
 
-class Header extends Component {
-  constructor() {
-    super();
-    this.state = {
-      show: false,
-      buttonClicked: false
+const useLocalState = (key, defaultValue) => {
+  const [value, setValue] = useState(() => {
+    const storedValue = localStorage.getItem(key);
+    return storedValue === null ? defaultValue : JSON.parse(storedValue);
+  });
+
+  useEffect(() => {
+    const listener = (e) => {
+      if (e.storageArea === localStorage && e.key === key) {
+        setValue(JSON.parse(e.newValue));
+      }
     };
-    this.showModal = this.showModal.bind(this);
-    this.hideModal = this.hideModal.bind(this);
-  }
+    window.addEventListener("storage", listener);
 
-  showModal = () => {
-    this.setState({ show: true });
-  };
+    return () => {
+      window.removeEventListener("storage", listener);
+    };
+  }, [key]);
 
-  hideModal = () => {
-    this.setState({ show: false });
-  };
-
-  handleClick = () => {
-    this.setState({
-      buttonClicked: !this.state.buttonClicked
+  const setValueInLocalStorage = (newValue) => {
+    setValue((currentValue) => {
+      const result =
+        typeof newValue === "function" ? newValue(currentValue) : newValue;
+      localStorage.setItem(key, JSON.stringify(result));
+      return result;
     });
   };
-  render() {
+
+  return [value, setValueInLocalStorage];
+};
+
+
+
+const Header = () => {
+  const [isToggled, setToggle] = useLocalState("isToggled");
+  const [selected, setSelected] = useLocalState("selected");
+  const toggle = () => setSelected(selected => !selected);
+  const fade = useSpring({
+      opacity: isToggled ? 0 : 1,
+      height: isToggled ? '0px' : '70px',
+      config: { 
+        duration: 200, 
+      },
+  });
+
     return (
-  <header className='head'>
-    <h1 className='head-h1'>So you want better results for your writing?</h1>
-    <Modal show={this.state.show} handleClose={this.hideModal}>
-    <h3>Submit to receive your's!</h3>
-    <form>
-        <div>
-          <div>
-            <li>
-              <input type="text" name="name" placeholder="NAME AND SURNAME" />
-            </li>
-            <li>
-              <input type="email" name="email" rel="reply-to" placeholder="EMAIL" autoComplete="email"/>
-            </li>
-            <div>
-              <button type="submit">SUBMIT</button>
-            </div>
-          </div>
-        </div>
-    </form>
-    </Modal>
-    <button href={{Modal}} className='head-h2' onClick={this.showModal}>Learn the 7 essential elements of a submission-ready manuscript.</button>
-  </header>
+      <>
+      <button style={{fade, position: `absolute`, top: `5px`, zIndex: `100000000`, border: 'none', background: 'transparent'}} onClick={() => setToggle((cur) => (cur === !isToggled ? isToggled : !isToggled))}>
+        <FontAwesomeIcon icon={selected ? faAngleUp : faAngleDown} onClick={() => setToggle(toggle)} size="1x"></FontAwesomeIcon>
+      </button>
+            <animated.header config={{duration: 1000000}} style={fade} className='head'>
+              <Modal />
+                <h1 className='head-h1'>So you want better results for your writing?</h1>
+            </animated.header>
+
+  </>
 )
     }
-      }
 
 export default Header;

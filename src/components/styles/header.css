@@ -4,11 +4,14 @@
 .head {
     position: relative;
     background: pink;
-    height: 60px;
+    height: auto;
     opacity: 0.8;
+    z-index: 10000000;
 }
 
+
 .head-h1 {
+   padding: 5px;
     text-align: center; 
     vertical-align: text-top; 
     font-family: 'Cinzel', serif;

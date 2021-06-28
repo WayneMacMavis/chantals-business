@@ -1,21 +1,45 @@
-import React from "react";
+import React, { useState } from "react"
+import ReactModal from 'react-modal';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
-import './modal.css';
 
-const Modal = ({ handleClose, show, children }) => {
-  const showHideClassName = show ? "modal display-block" : "modal display-none";
+import "./styles/modal.css";
 
-  return (
-    <div className={showHideClassName}>
-      <section className="modal-main">
-        {children}
-        <button className="closeBtn" type="button" onClick={handleClose}>
-        <FontAwesomeIcon icon={faTimes} size="1x" />
-        </button>
-      </section>
+
+const Modal = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+
+    return (
+      <div>
+  <button className="modal-button" onClick={() => setModalIsOpen(true)}>Learn the 7 essential elements of a submission-ready manuscript.</button>
+  <ReactModal className="modal" overlayClassName="overlay" isOpen={modalIsOpen} ariaHideApp={false}>
+  <form>
+  <h3 className="modal-title">Submit to receive your's!</h3>
+  <div className="frame">
+          <div>
+            <li className="item">
+              <input className="modal-box" type="text" name="name" placeholder="NAME AND SURNAME" />
+            </li>
+            <li className="item">
+              <input className="modal-box" type="email" name="email" rel="reply-to" placeholder="EMAIL" autoComplete="email"/>
+            </li>
+            <div className="submitBtn">
+              <button className="btn" type="submit">SUBMIT</button>
+            </div>
+          </div>
+        </div>
+    </form>
+    <div>
+    <button className="closeBtn" onClick={() => setModalIsOpen(false)}>
+    <FontAwesomeIcon icon={faTimes} size="1x" />
+    </button>
     </div>
-  );
-};
+  </ReactModal>
 
-export default Modal;
+  </div>
+)
+    }
+
+export default Modal

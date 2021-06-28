@@ -35,10 +35,11 @@ select:-webkit-autofill:focus {
   background: #d6d5d5e0;
   border-radius: 15px;
   box-shadow: 5px 10px 25px #1d1d1dda;
-  z-index: -10;
+  /* z-index: 1; */
+
 }
 
-.screen:after {
+/* .screen:after {
   content: '';
   display: block;
   position: absolute;
@@ -48,16 +49,17 @@ select:-webkit-autofill:focus {
   bottom: 0;
   border-radius: 15px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-  z-index: -1;
-}
+  z-index: -10;
+} */
 
 .screen-body {
   display: flex;
+
 }
 
 .screen-body-item {
   flex: 1;
-  padding: 50px;
+  padding: 30px;
 }
 
 .screen-body-item.left {
@@ -97,6 +99,7 @@ select:-webkit-autofill:focus {
 .icon {
   margin: 3px;
   color: #918c8cbb;
+  
 }
 
 .icon:hover {
@@ -127,7 +130,7 @@ select:-webkit-autofill:focus {
 
 .fa-envelope {
   position: relative;
-  margin-right: 20px;
+  margin-right: 120px;
   right: 160px;
   top: 30px;
 }

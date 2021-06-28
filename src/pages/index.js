@@ -3,6 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+
 import Video from "../assets/videos/homeBg.mp4"
 
 const IndexPage = () => {
@@ -12,8 +13,10 @@ const IndexPage = () => {
     <h1 style={{
       position: `absolute`,
       textAlign: `center`,
-      bottom: `20px`,
+      left: `50%`,
+      bottom: `1%`,
       color: `whitesmoke`,
+      transform: `translate(-50%,-50%)`,
       textShadow: `2px 2px black`,
       fontFamily: `Cinzel, serif`,
       }}>Editorial peace of mind for non-fiction writers</h1>
@@ -44,7 +47,7 @@ const IndexPage = () => {
     <div style={{
   position: `fixed`,
   width: `100%`,
-  height: `100%`, 
+  height: `200%`, 
   top: 0,
   left: 0,
   right: 0,
@@ -58,4 +61,5 @@ const IndexPage = () => {
     </Layout>
     )
   }
+
 export default IndexPage

@@ -11,8 +11,8 @@ const aboutPage = () => (
       backgroundSize: `cover`,
       left: `-300px`,
       bottom: `0px`,
-      minWidth: `70%`,
-      minHeight: `83.5%`,
+      minWidth: `900px`,
+      minHeight: `100vh`,
       zIndex: `-10`,}}></div>
     <h1>Hi from the second page</h1>
     <p>Welcome to page 2</p>

@@ -1,0 +1,87 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 15px;
+    transform: translate(-50%,-50%);
+    background: #c4c3c3d3;
+    box-shadow: 5px 10px 25px #3f3f3fda;
+    z-index: 20000;
+}
+
+.frame {
+    position: relative;
+    left: 5%;
+    text-align: left;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.548);
+    z-index: 100000000;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    padding: 2px;
+    margin: 0;
+  }
+
+  .modal-box {
+      left: 5px;
+      width: 90%;
+      background: transparent;
+      border-left: none;
+      border-top: none;
+      border-right: none;
+  }
+
+  .submitBtn {
+      position: relative;
+      bottom: -30px;
+      background: transparent;
+  }
+
+  .btn {
+      color: rgb(253, 82, 139);
+      background: transparent;
+      border: none;
+  }
+
+.modal-button {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    font-size: 21px;
+    font-weight: 500;
+    transform: translate(-50%,-50%);
+    border: none;
+    background: transparent;
+    padding: 2px;
+    border-bottom: 1px solid #000
+    
+    
+}
+
+.modal-title {
+    position: relative;
+    top: 10px;
+}
+
+.closeBtn {
+    position: absolute;
+    background: transparent;
+    border: none;
+    top: 5px;
+    right: 5px;
+}
