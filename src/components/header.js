@@ -10,7 +10,7 @@ import Modal from './Modal';
 
 const useLocalState = (key, defaultValue) => {
   const [value, setValue] = useState(() => {
-    const storedValue = localStorage.getItem(key);
+    const storedValue = typeof window !== 'undefined' && localStorage.getItem(key);
     return storedValue === null ? defaultValue : JSON.parse(storedValue);
   });
 
