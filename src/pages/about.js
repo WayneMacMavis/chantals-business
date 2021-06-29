@@ -7,12 +7,15 @@ const aboutPage = () => (
   <Layout>
     <Seo title="Page two" />
     <div style={{backgroundImage: `url(${Img})`, overflowY: `hidden`,
-      position: `absolute`,
+      position: `relative`,
+      display: `block`,
       backgroundSize: `cover`,
-      left: `-20vw`,
+      left:`-400px`,
+      marginLeft: `auto`,
+      marginRight: `auto`,
       bottom: `0px`,
-      minWidth: `900px`,
-      minHeight: `100vh`,
+      width: `1000px`,
+      height: `100vh`,
       zIndex: `-10`,}}></div>
     <h1>Hi from the second page</h1>
     <p>Welcome to page 2</p>
