@@ -10,7 +10,7 @@ const aboutPage = () => (
       position: `fixed`,
       display: `block`,
       backgroundSize: `cover`,
-      left:`-450px`,
+      left:`-380px`,
       marginLeft: `auto`,
       marginRight: `auto`,
       bottom: `0px`,
