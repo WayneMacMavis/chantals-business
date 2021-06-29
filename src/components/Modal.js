@@ -16,7 +16,7 @@ const Modal = () => {
   <button className="modal-button" onClick={() => setModalIsOpen(true)}>Learn the 7 essential elements of a submission-ready manuscript.</button>
   <ReactModal className="modal" overlayClassName="overlay" isOpen={modalIsOpen} ariaHideApp={false}>
   <form>
-  <h3 className="modal-title">Submit to receive your's!</h3>
+  <h3 className="modal-title">Submit to receive yours!</h3>
   <div className="frame">
           <div>
             <li className="item">

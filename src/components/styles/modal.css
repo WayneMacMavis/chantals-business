@@ -8,7 +8,7 @@
     border-radius: 15px;
     transform: translate(-50%,-50%);
     background: #c4c3c3d3;
-    box-shadow: 5px 10px 25px #3f3f3fda;
+    box-shadow: 5px 10px 25px #2e2b2bda;
     z-index: 20000;
 }
 
@@ -48,14 +48,23 @@
 
   .submitBtn {
       position: relative;
+      text-align: center;
       bottom: -30px;
       background: transparent;
   }
 
   .btn {
-      color: rgb(253, 82, 139);
+      color: rgb(92, 92, 92);
       background: transparent;
       border: none;
+      /* border-bottom: solid gray; */
+      padding: 5px;
+      cursor: pointer;
+  }
+
+  .btn:hover {
+      color: deeppink;
+     border-bottom:1px solid deeppink;
   }
 
 .modal-button {
@@ -68,9 +77,12 @@
     border: none;
     background: transparent;
     padding: 2px;
-    border-bottom: 1px solid #000
-    
-    
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+.modal-button:hover {
+    color: rgb(124, 124, 124);
 }
 
 .modal-title {
@@ -84,4 +96,9 @@
     border: none;
     top: 5px;
     right: 5px;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    color: deeppink;
 }

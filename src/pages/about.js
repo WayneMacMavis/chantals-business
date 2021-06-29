@@ -9,7 +9,7 @@ const aboutPage = () => (
     <div style={{backgroundImage: `url(${Img})`, overflowY: `hidden`,
       position: `absolute`,
       backgroundSize: `cover`,
-      left: `-300px`,
+      left: `-20%`,
       bottom: `0px`,
       minWidth: `900px`,
       minHeight: `100vh`,

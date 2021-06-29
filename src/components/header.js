@@ -10,13 +10,13 @@ import Modal from './Modal';
 
 const useLocalState = (key, defaultValue) => {
   const [value, setValue] = useState(() => {
-    const storedValue = typeof window !== 'undefined' && localStorage.getItem(key);
+    const storedValue = typeof window !== 'undefined' && sessionStorage.getItem(key);
     return storedValue === null ? defaultValue : JSON.parse(storedValue);
   });
 
   useEffect(() => {
     const listener = (e) => {
-      if (e.storageArea === localStorage && e.key === key) {
+      if (e.storageArea === sessionStorage && e.key === key) {
         setValue(JSON.parse(e.newValue));
       }
     };
@@ -31,7 +31,7 @@ const useLocalState = (key, defaultValue) => {
     setValue((currentValue) => {
       const result =
         typeof newValue === "function" ? newValue(currentValue) : newValue;
-      localStorage.setItem(key, JSON.stringify(result));
+      sessionStorage.setItem(key, JSON.stringify(result));
       return result;
     });
   };
@@ -46,7 +46,7 @@ const Header = () => {
   const [selected, setSelected] = useLocalState("selected");
   const toggle = () => setSelected(selected => !selected);
   const fade = useSpring({
-      opacity: isToggled ? 0 : 1,
+      opacity: isToggled ? 0 : 0.7,
       height: isToggled ? '0px' : '70px',
       config: { 
         duration: 200, 
@@ -56,7 +56,7 @@ const Header = () => {
     return (
       <>
       <button style={{fade, position: `absolute`, top: `5px`, zIndex: `100000000`, border: 'none', background: 'transparent'}} onClick={() => setToggle((cur) => (cur === !isToggled ? isToggled : !isToggled))}>
-        <FontAwesomeIcon icon={selected ? faAngleUp : faAngleDown} onClick={() => setToggle(toggle)} size="1x"></FontAwesomeIcon>
+        <FontAwesomeIcon className="header-fas" icon={selected ? faAngleUp : faAngleDown} onClick={() => setToggle(toggle)} size="1x"></FontAwesomeIcon>
       </button>
             <animated.header config={{duration: 1000000}} style={fade} className='head'>
               <Modal />
