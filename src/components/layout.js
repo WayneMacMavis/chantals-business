@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Navigation from "./navigation"
+import Overlay from "./overlay"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import "./layout.css"
@@ -33,6 +34,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Navigation menuLinks={data.site.siteMetadata.menuLinks} />
+      <Overlay />
       <div
         style={{
           margin: `0 auto`,
