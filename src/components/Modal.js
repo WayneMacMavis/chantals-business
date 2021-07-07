@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import ReactModal from 'react-modal';
+import {useSpring, animated} from "react-spring"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -8,16 +8,36 @@ import "./styles/modal.css";
 
 
 const Modal = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modal, setModal] = useState(false);
 
+  const fadeDown = useSpring({
+    opacity: modal ? 1 : 0,
+    top: modal ? '50%' : '10%',
+    config: { 
+      duration: 600, 
+    },
+});
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
+  if(modal) {
+    document.body.classList.add('active-modal')
+  } else {
+    document.body.classList.remove('active-modal')
+  }
 
     return (
-      <div>
-  <button className="modal-button" onClick={() => setModalIsOpen(true)}>Learn the 7 essential elements of a submission-ready manuscript.</button>
-  <ReactModal className="modal" overlayClassName="overlay" isOpen={modalIsOpen} ariaHideApp={false}>
-  <form>
+      <>
+  <button className="modal-button" onClick={toggleModal}>Learn the 7 essential elements of a submission-ready manuscript.</button>
+
+  {modal && (
+        <div className="modal">
+          <div role = "button" aria-label="overlay" tabIndex={0} onClick={toggleModal} onKeyDown={toggleModal} className="overlay"></div>
+          <animated.div style={fadeDown} className="modal-content">
+  <form className="modal-form">
   <h3 className="modal-title">Submit to receive yours!</h3>
-  <div className="frame">
           <div>
             <li className="item">
               <input className="modal-box" type="text" name="name" placeholder="NAME AND SURNAME" />
@@ -29,16 +49,14 @@ const Modal = () => {
               <button className="btn" type="submit">SUBMIT</button>
             </div>
           </div>
-        </div>
     </form>
-    <div>
-    <button className="closeBtn" onClick={() => setModalIsOpen(false)}>
+    <button className="closeBtn" onClick={toggleModal}>
     <FontAwesomeIcon icon={faTimes} size="1x" />
     </button>
-    </div>
-  </ReactModal>
-
-  </div>
+    </animated.div>
+</div>
+    )}
+  </>
 )
     }
 

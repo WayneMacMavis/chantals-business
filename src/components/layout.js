@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
@@ -50,6 +43,7 @@ const Layout = ({ children }) => {
             textAlign: `left`,
             left: `10px`,
             bottom: `0.1rem`,
+            zIndex: `1000000`,
           }}
         >
           Built by
@@ -57,7 +51,7 @@ const Layout = ({ children }) => {
           <a href="https://web.facebook.com/Wayne.mac.mavis/">Wayne Mac Mavis</a>,
           © {new Date().getFullYear()}
           <div className="icons">
-          <a className="icon" href="https://web.facebook.com/ChantalJosephEditor">
+          <a className="icon" href="https://web.facebook.com/ChantalJosephEditor" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faFacebook} color="rgb(59,89,153)" size="2x" />
           </a>
           <a className="icon" href="/">

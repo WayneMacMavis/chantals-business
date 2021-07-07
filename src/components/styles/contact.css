@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-/* font-family: 'Caveat', cursive; */
 
 button, input, textarea {
   font-family: 'Caveat', cursive;
@@ -35,22 +34,8 @@ select:-webkit-autofill:focus {
   background: #d6d5d5e0;
   border-radius: 15px;
   box-shadow: 5px 10px 25px #1d1d1dda;
-  /* z-index: 1; */
-
+  z-index: 100;
 }
-
-/* .screen:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 4px;
-  right: 4px;
-  bottom: 0;
-  border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-  z-index: -10;
-} */
 
 .screen-body {
   display: flex;

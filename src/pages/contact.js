@@ -21,50 +21,7 @@ const contactPage = () => (
       top: `0px`,
       minWidth: `100%`,
       minHeight: `100%`,
-      zIndex: `-100`,}}></div>
-    {/* <div className="modal">
-    <form method="post" action="https://formspree.io/f/mvodawpn">
-    <label>
-    <input type="text" name="name" placeholder="Name and Surname" />
-  </label>
-    <label>
-    <input type="email" name="email" placeholder="Email" />
-  </label>
-  <label>
-    <input type="country" name="country" placeholder="Country" />
-  </label>
-  <label>
-    <input type="text" name="subject" placeholder="Subject"/>
-  </label>
-  <label>
-  <textarea type="text" name="message" placeholder="Type your message..."/> 
-  </label>
-  <input type="submit" value="Send"/>
-  <input type="reset" value="Clear" />
-  <div className="contact-icons">
-    <FontAwesomeIcon className="phone" icon={faPhoneAlt} size="2x" color="#b6b6b6"/>
-    <h3>0761234567</h3>
-    <a href="mailto:chantaljosepheditor@gmail.com">
-    <FontAwesomeIcon className="email" icon={faEnvelope} size="2x" color="#b6b6b6"/>
-    <h3>chantaljosepheditor@gmail.com</h3>
-    </a>
-    </div>
-  <div className="icons-container">
-    <a className="icon" href="https://web.facebook.com/ChantalJosephEditor">
-    <FontAwesomeIcon icon={faFacebookSquare} size="2x" />
-    </a>
-    <a className="icon" href="/">
-    <FontAwesomeIcon icon={faInstagramSquare} size="2x" />
-    </a>
-    <a className="icon" href="/">
-    <FontAwesomeIcon icon={faLinkedin} size="2x" />
-    </a>
-    <a className="icon" href="/">
-    <FontAwesomeIcon icon={faYoutubeSquare} size="2x" />
-    </a>
-    </div>
-</form>
-</div> */}
+      zIndex: `-100`,}} />
 
   <div className="container">
     <form className="screen" method="post" action="https://formspree.io/f/mvodawpn">

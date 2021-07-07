@@ -17,7 +17,7 @@ const IndexPage = () => {
       opacity: 1,
       transform: "translate( -50%, -50%)"
     },
-    delay: 3000,
+    delay: 1000,
     config: { duration: 1000, tension: 20 }
 });
   return (
@@ -30,7 +30,6 @@ const IndexPage = () => {
     left: `0px`,
     position: `absolute`,
     backgroundSize: `cover`,
-    // zIndex: `-12`,
     overflow: `hidden`,}}>
     <video autoPlay loop muted
     style={{
@@ -53,7 +52,6 @@ const IndexPage = () => {
       textAlign: `center`,
       width: `60%`,
       left: `100%`,
-      // bottom: `0px`,
       color: `white`,
       transform: `translate(-50%,-50%)`,
       textShadow: `2px 2px black`,
