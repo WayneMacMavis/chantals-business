@@ -43,6 +43,7 @@ const useLocalState = (key, defaultValue) => {
 const Header = () => {
   const [isToggled, setToggle] = useLocalState("isToggled");
   const [selected, setSelected] = useLocalState("selected");
+  const [modal, setModal] = useState(false);
   const toggle = () => setSelected(selected => !selected);
   const fade = useSpring({
       opacity: isToggled ? 0 : 0.7,
@@ -58,7 +59,8 @@ const Header = () => {
         <FontAwesomeIcon style={{position: `absolute`}} className="header-fas" icon={selected ? faAngleDown : faAngleUp} onClick={() => setToggle(toggle)} size="1x"></FontAwesomeIcon>
       </button>
             <animated.header config={{duration: 1000000}} style={fade} className='head'>
-              <Modal />
+            <button className="modal-button" onClick={() => {setModal(true)}}>Learn the 7 essential elements of a submission-ready manuscript.</button>
+              {modal && <Modal closeModal={setModal} />}
                 <h1 className='head-h1'>So you want better results for your writing?</h1>
             </animated.header>
 

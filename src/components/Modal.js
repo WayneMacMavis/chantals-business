@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import {useSpring, animated} from "react-spring"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,34 +7,27 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import "./styles/modal.css";
 
 
-const Modal = () => {
-  const [modal, setModal] = useState(false);
+const Modal = ({ closeModal }) => {
 
   const fadeDown = useSpring({
-    opacity: modal ? 1 : 0,
-    top: modal ? '50%' : '10%',
+    from:{
+    top: '10%',
+    opacity: 0,
+    },
+    to:{
+    top: '50%',
+    opacity: 1,
+    },
     config: { 
       duration: 600, 
     },
 });
 
-  const toggleModal = () => {
-    setModal(!modal);
-  };
-
-  if(modal) {
-    document.body.classList.add('active-modal')
-  } else {
-    document.body.classList.remove('active-modal')
-  }
-
     return (
-      <>
-  <button className="modal-button" onClick={toggleModal}>Learn the 7 essential elements of a submission-ready manuscript.</button>
+      <animated.div style={fadeDown}>
 
-  {modal && (
         <div className="modal">
-          <div role = "button" aria-label="overlay" tabIndex={0} onClick={toggleModal} onKeyDown={toggleModal} className="overlay"></div>
+          <div role = "button" aria-label="overlay" tabIndex={0} onClick={() => {closeModal(false)}} onKeyDown={closeModal} className="overlay"></div>
           <animated.div style={fadeDown} className="modal-content">
   <form className="modal-form">
   <h3 className="modal-title">Submit to receive yours!</h3>
@@ -50,13 +43,12 @@ const Modal = () => {
             </div>
           </div>
     </form>
-    <button className="closeBtn" onClick={toggleModal}>
+    <button className="closeBtn" onClick={() => {closeModal(false)}}>
     <FontAwesomeIcon icon={faTimes} size="1x" />
     </button>
     </animated.div>
 </div>
-    )}
-  </>
+  </animated.div>
 )
     }
 
