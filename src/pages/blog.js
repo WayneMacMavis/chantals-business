@@ -6,8 +6,10 @@ import Seo from "../components/seo"
 const blogPage = () => (
   <Layout>
     <Seo title="Page six" />
+    <div style={{position: `relative`, width: `100vw`, height: `100vh`, background: `red`,}}>
     <h1>Hi from the sixth page</h1>
     <p>Welcome to page 6</p>
+    </div>
   </Layout>
 )
 

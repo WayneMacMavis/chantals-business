@@ -4,8 +4,10 @@ import { useSpring, animated } from 'react-spring'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-
 import Video from "../assets/videos/homeBg.mp4"
+
+import IndexTwo from "../components/index-two"
+
 
 const IndexPage = () => {
   const fadeLeft = useSpring({
@@ -24,28 +26,35 @@ const IndexPage = () => {
   <Layout>
     <Seo title="Home" />
     <div style={{
+      // minWidth: `100%`,
+      position: `relative`,
+      width: `1400px`,
+      height: `90vh`,
+      display: `block`,
     top: `0px`,
-    right: `0px`,
-    bottom: `0px`,
-    left: `0px`,
-    position: `absolute`,
-    backgroundSize: `cover`,
+    marginRight: `0px`,
+    marginBottom: `-6px`,
+    marginLeft: `-230px`,
+    // position: `relative`,
+  
     overflow: `hidden`,}}>
     <video autoPlay loop muted
     style={{
-      overflowY: `hidden`,
-      position: `absolute`,
-      backgroundSize: `cover`,
+      position: `relative`,
+      // width: `60px`,
+      overflow: `hidden`,
       left: `0px`,
       top: `0px`,
+      right: `0px`,
+      bottom: `0px`,
       marginRight: `10px`,
-      minWidth: `100%`,
-      minHeight: `100%`,
+      minWidth: `50%`,
+      minHeight: `50%`,
     }}>
-      <source src={Video} type='video/mp4' />
+      <source src={Video} type='video/mp4' no-repeat center fixed />
     </video>
     </div>
-    <div style={{position: `absolute`, zIndex: `10000000`, top: `600px`, left: `10%`, }}>
+    <div style={{position: `absolute`, zIndex: `10`, top: `600px`, left: `10%`, }}>
     <animated.div style={fadeLeft}>
     <h1 style={{
       position: `relative`,
@@ -56,11 +65,12 @@ const IndexPage = () => {
       transform: `translate(-50%,-50%)`,
       textShadow: `2px 2px black`,
       fontFamily: `Cinzel, serif`,
-      zIndex: `100000`,
       }}>Editorial peace of mind for non-fiction writers
       </h1>
       </animated.div>
+      
 </div>
+<IndexTwo/>
     </Layout>
     )
   }

@@ -48,7 +48,8 @@
 }
 
 .modal-button:hover {
-    color: rgb(124, 124, 124);
+    color: deeppink;
+    border-bottom: 1px solid deeppink;
 }
 
 .submitBtn {

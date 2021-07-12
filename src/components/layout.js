@@ -4,8 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Navigation from "./navigation"
 import Overlay from "./overlay"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons"
+import Footer from "./footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -32,40 +31,14 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          padding: `0rem 1rem`,
         }}
       >
               <main>{children}</main>
-              <footer
-          style={{
-            position: `absolute`,
-            width: `99%`,
-            textAlign: `left`,
-            left: `10px`,
-            bottom: `0.1rem`,
-            zIndex: `1000000`,
-          }}
-        >
-          Built by
-          {` `}
-          <a href="https://web.facebook.com/Wayne.mac.mavis/">Wayne Mac Mavis</a>,
-          © {new Date().getFullYear()}
-          <div className="icons">
-          <a className="icon" href="https://web.facebook.com/ChantalJosephEditor" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faFacebook} color="rgb(59,89,153)" size="2x" />
-          </a>
-          <a className="icon" href="/">
-          <FontAwesomeIcon icon={faInstagram} color="rgb(228,64,95)" size="2x" />
-          </a>
-          <a className="icon" href="/">
-          <FontAwesomeIcon icon={faLinkedin} color="rgb(0,119,181)" size="2x" />
-          </a>
-          <a className="icon" href="/">
-          <FontAwesomeIcon icon={faYoutube} color="rgb(205,32,31)" size="2x" />
-          </a>
-          </div>
-        </footer>
+
+          
       </div>
+      <Footer />
     </>
   )
 }

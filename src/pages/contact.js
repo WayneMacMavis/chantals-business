@@ -14,16 +14,21 @@ import "../components/styles/contact.css"
 const contactPage = () => (
   <Layout>
     <Seo title="Page five" />
-    <div style={{backgroundImage: `url(${Background})`, overflowY: `hidden`,
+    <div style={{backgroundImage: `url(${Background})`,
       position: `absolute`,
+      height: `100vh`,
+      width: `100vw`,
+      // backgroundRepeat: `no-repeat`,
       backgroundSize: `cover`,
-      left: `0px`,
       top: `0px`,
-      minWidth: `100%`,
+      left: `1px`,
+      right: `-300px`,
+      bottom: `0px`,
+      boxSizing: `border-box`,
       minHeight: `100%`,
-      zIndex: `-100`,}} />
+      zIndex: `0`,}} />
 
-  <div className="container">
+  <div className="contact-container">
     <form className="screen" method="post" action="https://formspree.io/f/mvodawpn">
       <div className="screen-body">
         <div className="screen-body-item left">

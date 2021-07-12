@@ -6,7 +6,7 @@ import "../components/styles/navigation.css"
 const Navigation = ({ menuLinks }) => {
 
   return (
-  <header>
+  <nav className="navigation">
     <div className="container">
       <div>
           <nav>
@@ -24,7 +24,7 @@ const Navigation = ({ menuLinks }) => {
           </nav>
         </div>
     </div>
-  </header>
+  </nav>
   )
               }
             

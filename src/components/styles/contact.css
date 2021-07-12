@@ -22,15 +22,18 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-.container {
+.contact-container {
   flex: 0 1 700px;
   margin: auto;
-  padding: 10px;
+  padding: 60px;
 }
 
 .screen {
   position: relative;
-  top: 5vh;
+  width: 80vw;
+  top: 2vh;
+  right: 10px;
+  left: 10px;
   background: #d6d5d5e0;
   border-radius: 15px;
   box-shadow: 5px 10px 25px #1d1d1dda;
@@ -44,7 +47,7 @@ select:-webkit-autofill:focus {
 
 .screen-body-item {
   flex: 1;
-  padding: 30px;
+  padding: 25px;
 }
 
 .screen-body-item.left {

@@ -55,7 +55,7 @@ const Header = () => {
 
     return (
       <>
-      <button style={{position: `absolute`, top: `5px`, zIndex: `100000000`, border: 'none', background: 'transparent'}} onClick={() => setToggle((cur) => (cur === !isToggled ? isToggled : !isToggled))}>
+      <button style={{position: `absolute`, top: `5px`, zIndex: `100000000000000000000`, border: 'none', background: 'transparent'}} onClick={() => setToggle((cur) => (cur === !isToggled ? isToggled : !isToggled))}>
         <FontAwesomeIcon style={{position: `absolute`}} className="header-fas" icon={selected ? faAngleDown : faAngleUp} onClick={() => setToggle(toggle)} size="1x"></FontAwesomeIcon>
       </button>
             <animated.header config={{duration: 1000000}} style={fade} className='head'>
