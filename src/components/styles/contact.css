@@ -30,10 +30,10 @@ select:-webkit-autofill:focus {
 
 .screen {
   position: relative;
-  width: 80vw;
+  width: 60vw;
   top: 2vh;
-  right: 10px;
-  left: 10px;
+  /* right: 100px; */
+  left: 50px;
   background: #d6d5d5e0;
   border-radius: 15px;
   box-shadow: 5px 10px 25px #1d1d1dda;
@@ -81,7 +81,7 @@ select:-webkit-autofill:focus {
   display: flex;
   flex-direction: row;
   top: 230px;
-  left: 0px;
+  left: 20px;
 }
 
 .icon {
@@ -96,30 +96,34 @@ select:-webkit-autofill:focus {
 
 .app-contact {
   margin-top: -10px;
-  margin-right: 20px;
+  margin-left: 50px;
+  left: 199px;
   font-size: 25px;
   font-family: 'Caveat', cursive;
-  text-align: center;
+  text-align: left;
   color: #888;
+  width: 200px;
 }
 
 .phone, .email {
-  right: -200px;
+  left: -10px;
   font-size: 25px;
-  margin-top: 5px;
+  margin: 5px;
   color: #999;
 }
 
 .phone {
-  position: relative;
+  position: absolute;
+  margin-top: 1px;
   margin-right: -30px;
-  right: 25px;
+  left: 15px;
 }
 
 .fa-envelope {
   position: relative;
-  margin-right: 120px;
-  right: 160px;
+  margin-bottom: -10px;
+  margin-right: 25px;
+  left: -189px;
   top: 30px;
 }
 

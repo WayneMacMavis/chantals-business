@@ -6,17 +6,16 @@ import { faFacebook, faInstagram, faLinkedin, faYoutube } from "@fortawesome/fre
 const footer = () => (
   <div>
   <div style={{
-    position: `absolute`,
+    position: `relative`,
     width: `100vw`,
-    height: `3.5vw`,
+    // height: `3.5vw`,
     // top: `0px`,
-    margin: `0`,
-    marginTop: `30px`,
-    marginBottom: `0px`,
+    // margin: `0`,
+    // marginTop: `50px`,
+    bottom: `-20px`,
     // height: `20px`,
     textAlign: `left`,
-    background: `rgba(43, 164, 172, 0.692)`,
-    paddingTop: `15px`,
+    // paddingTop: `15px`,
     zIndex: `1000000000000000000`,
   }}>
      Built by
