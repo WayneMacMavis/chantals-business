@@ -84,35 +84,26 @@ export const FadeInContainerThree = ({ children }) => {
 
 const indexTwo = () => (
   <div style={{
-      overflowY: `hidden`,
-      position: `relative`,
-      backgroundSize: `cover`,
-      backgroundImage: `linear-gradient(to right, white , pink)`,
-      margin: `0`,
-    //   marginleft: `100%`,
-      top: `7px`,
-      right: `0px`,
-      bottom: `-10px`,
-      left: `0px`,
-    //   marginTop: `54.1%`,
-      width: `100vw`,
-      height: `auto`,
-      // zIndex: `0`,
+    position: `relative`,
   }}>
   <div style={{
-    position: `relative`,
+    display: `flex`,
+    justifyContent: `center`,
+    backgroundImage: `linear-gradient(to right, white , pink)`,
+    padding: `20px`,
+    marginLeft: `-25%`,
+    marginRight: `-25%`,
+    height: `auto`,
+  }}>
+  <div style={{
+    width: `50%`,
     textAlign: `center`,
-    top: `0vh`,
-    left: `150px`,
-    width: `50vw`,
-    paddingTop: `20px`,
-    paddingBottom: `20px`,
     fontFamily: `Cinzel, serif`,
-    zIndex: `100`,
+    zIndex: `10`,
   }}>
       <FadeInContainer>
   <img src={Pencil} alt="" width="50px"></img>
-  <animated.h1 style={{fontFamily: `Cinzel, serif`, fontSize: `27px`,}}>You want your audience to focus on your message, not your mistakes. </animated.h1>
+  <h1 style={{fontFamily: `Cinzel, serif`, fontSize: `27px`,}}>You want your audience to focus on your message, not your mistakes. </h1>
     </FadeInContainer>
     <FadeInContainerTwo>
   <img src={Book} alt="" width="50px"></img>
@@ -129,6 +120,7 @@ const indexTwo = () => (
     color: `black`,
   }} href="mailto:chantaljosepheditor@gmail.com" type="email" name="email" rel="reply-to" autoComplete="email">Email me for an obligation-free quote.</a>
   </FadeInContainerThree>
+  </div>
   </div>
   <Seo title="Home" />
   </div>

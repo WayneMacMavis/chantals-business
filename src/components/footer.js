@@ -7,16 +7,9 @@ const footer = () => (
   <div>
   <div style={{
     position: `relative`,
-    width: `100vw`,
-    // height: `3.5vw`,
-    // top: `0px`,
-    // margin: `0`,
-    // marginTop: `50px`,
     bottom: `-20px`,
-    // height: `20px`,
-    textAlign: `left`,
-    // paddingTop: `15px`,
-    zIndex: `1000000000000000000`,
+    width: `100%`,
+    // height: `2.5rem`,
   }}>
      Built by
           {` `}

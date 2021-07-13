@@ -34,9 +34,9 @@
 }
 
 .modal-button {
-    position: absolute;
+    position: relative;
     left: 50%;
-    bottom: 5%;
+    bottom: -70%;
     font-size: 21px;
     font-weight: 500;
     transform: translate(-50%,-50%);

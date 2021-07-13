@@ -30,6 +30,7 @@
     padding: 9px;
     bottom: 10px;
     text-decoration: none;
+    text-shadow: 1px 1px 1px black;
 }
 
 .nav-links:hover {

@@ -102,7 +102,7 @@ select:-webkit-autofill:focus {
   font-family: 'Caveat', cursive;
   text-align: left;
   color: #888;
-  width: 200px;
+  width: 80%;
 }
 
 .phone, .email {

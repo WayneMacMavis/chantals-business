@@ -12,9 +12,9 @@
 
 
 .head-h1 {
-   padding: 5px;
+    margin-top: -25px;
+    padding: 5px;
     text-align: center; 
-    vertical-align: text-top; 
     font-family: 'Cinzel', serif;
     font-size: 26px;
 }

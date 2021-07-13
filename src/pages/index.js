@@ -26,30 +26,19 @@ const IndexPage = () => {
   <Layout>
     <Seo title="Home" />
     <div style={{
-      // minWidth: `100%`,
-      position: `relative`,
-      width: `1400px`,
-      height: `90vh`,
-      display: `block`,
-    top: `0px`,
-    marginRight: `0px`,
-    marginBottom: `-6px`,
-    marginLeft: `-230px`,
-    // position: `relative`,
-  
-    overflow: `hidden`,}}>
+    position: `relative`,
+    height: `90vh`,
+    overflow: `hidden`,
+    }}>
     <video autoPlay loop muted
     style={{
-      position: `relative`,
-      // width: `60px`,
-      overflow: `hidden`,
-      left: `0px`,
+      position: `fixed`,
+      objectFit: `cover`,
+      width: `100vw`,
+      height: `100vh`,
       top: `0px`,
-      right: `0px`,
-      bottom: `0px`,
-      marginRight: `10px`,
-      minWidth: `50%`,
-      minHeight: `50%`,
+      left: `0px`,
+      zIndex: `-10`,
     }}>
       <source src={Video} type='video/mp4' no-repeat center fixed />
     </video>
