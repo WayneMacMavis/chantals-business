@@ -5,7 +5,6 @@ import Seo from "../components/seo"
 import Nerd from "../assets/images/nerd.png"
 import Pencil from "../assets/images/pencil.png"
 import Book from "../assets/images/open-book.png"
-// import VisibilitySensor from "../components/VisibilitySensor";
 
 const FadeInTop = ({ isVisible, children }) => {
   const props = useSpring({
@@ -85,25 +84,29 @@ export const FadeInContainerThree = ({ children }) => {
 const indexTwo = () => (
   <div style={{
     position: `relative`,
-  }}>
-  <div style={{
+    height: `auto`,
+    width: `100vw`,
     display: `flex`,
     justifyContent: `center`,
+    flexWrap: `nowrap`,
     backgroundImage: `linear-gradient(to right, white , pink)`,
     padding: `20px`,
-    marginLeft: `-50%`,
-    marginRight: `-50%`,
-    height: `auto`,
+    margin: `1px`,
   }}>
   <div style={{
+    position: `relative`,
+
     width: `50%`,
+    display: `flex`,
+    justifyContent: `center`,
+    flexDirection: `column`,
     textAlign: `center`,
     fontFamily: `Cinzel, serif`,
-    zIndex: `10`,
+    zIndex: `1099999`,
   }}>
       <FadeInContainer>
   <img src={Pencil} alt="" width="50px"></img>
-  <h1 style={{fontFamily: `Cinzel, serif`, fontSize: `27px`,}}>You want your audience to focus on your message, not your mistakes. </h1>
+  <h1 style={{fontFamily: `Cinzel, serif`, fontSize: `27px`, }}>You want your audience to focus on your message, not your mistakes. </h1>
     </FadeInContainer>
     <FadeInContainerTwo>
   <img src={Book} alt="" width="50px"></img>
@@ -120,9 +123,8 @@ const indexTwo = () => (
     color: `black`,
   }} href="mailto:chantaljosepheditor@gmail.com" type="email" name="email" rel="reply-to" autoComplete="email">Email me for an obligation-free quote.</a>
   </FadeInContainerThree>
-  </div>
-  </div>
   <Seo title="Home" />
+  </div>
   </div>
 )
 

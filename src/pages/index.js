@@ -25,14 +25,15 @@ const IndexPage = () => {
   return (
   <Layout>
     <Seo title="Home" />
+    <div style={{margin: `0`,}}>
     <div style={{
     position: `relative`,
     height: `90vh`,
     overflow: `hidden`,
+    margin: `0`,
     }}>
     <video autoPlay loop muted
     style={{
-      position: `fixed`,
       objectFit: `cover`,
       width: `100vw`,
       height: `100vh`,
@@ -58,6 +59,7 @@ const IndexPage = () => {
       </h1>
       </animated.div>
       
+</div>
 </div>
 <IndexTwo/>
     </Layout>

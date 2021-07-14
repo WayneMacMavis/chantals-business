@@ -27,17 +27,8 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <Navigation menuLinks={data.site.siteMetadata.menuLinks} />
       <Overlay />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0rem 1rem`,
-        }}
-      >
               <main>{children}</main>
 
-          
-      </div>
       <Footer />
     </>
   )
