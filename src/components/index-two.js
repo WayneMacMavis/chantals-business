@@ -91,8 +91,8 @@ const indexTwo = () => (
     justifyContent: `center`,
     backgroundImage: `linear-gradient(to right, white , pink)`,
     padding: `20px`,
-    marginLeft: `-25%`,
-    marginRight: `-25%`,
+    marginLeft: `-50%`,
+    marginRight: `-50%`,
     height: `auto`,
   }}>
   <div style={{
