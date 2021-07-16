@@ -31,7 +31,7 @@ const IndexPage = () => {
       justifyContent: `center`,
     position: `relative`,
     width: `100vw`,
-    height: `80vh`,
+    height: `90vh`,
     top: `0`,
     right: `0`,
     bottom: `0`,
