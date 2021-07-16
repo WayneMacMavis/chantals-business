@@ -29,6 +29,11 @@ const IndexPage = () => {
     position: `relative`,
     width: `100vw`,
     height: `80vh`,
+    top: `0`,
+    right: `0`,
+    bottom: `0`,
+    left: `0`,
+    backgroundPosition: `center`,
     overflow: `hidden`,
     }}>
     <video autoPlay loop muted
