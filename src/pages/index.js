@@ -26,6 +26,9 @@ const IndexPage = () => {
   <Layout>
     <Seo title="Home" />
     <div style={{
+      display: `flex`,
+      alignItems: `center`,
+      justifyContent: `center`,
     position: `relative`,
     width: `100vw`,
     height: `80vh`,
@@ -38,7 +41,12 @@ const IndexPage = () => {
     }}>
     <video autoPlay loop muted
     style={{
+
       objectFit: `cover`,
+      width: `100%`,
+      height: `100%`,
+      top: `0`,
+      left: `0`,
     }}>
       <source src={Video} type='video/mp4'/>
     </video>
