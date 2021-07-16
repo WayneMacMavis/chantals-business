@@ -52,7 +52,7 @@ const IndexPage = () => {
     </video>
     <div style={{
       position: `absolute`,
-      top: `80%`,
+      top: `84%`,
       left: `50%`,
       width: `50%`,
       zIndex: `1000`,
