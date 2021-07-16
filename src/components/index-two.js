@@ -90,7 +90,7 @@ const indexTwo = () => (
     justifyContent: `center`,
     flexWrap: `nowrap`,
     backgroundImage: `linear-gradient(to right, white , pink)`,
-    padding: `30px`,
+    padding: `10%`,
   }}>
   <div style={{
     position: `relative`,
