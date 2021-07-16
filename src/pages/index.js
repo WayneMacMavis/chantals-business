@@ -25,42 +25,36 @@ const IndexPage = () => {
   return (
   <Layout>
     <Seo title="Home" />
-    <div style={{margin: `0`,}}>
     <div style={{
     position: `relative`,
-    height: `90vh`,
+    width: `100vw`,
+    height: `80vh`,
     overflow: `hidden`,
-    margin: `0`,
     }}>
     <video autoPlay loop muted
     style={{
       objectFit: `cover`,
-      width: `100vw`,
-      height: `100vh`,
-      top: `0px`,
-      left: `0px`,
-      zIndex: `-10`,
     }}>
-      <source src={Video} type='video/mp4' no-repeat center fixed />
+      <source src={Video} type='video/mp4'/>
     </video>
-    </div>
-    <div style={{position: `absolute`, zIndex: `10`, top: `600px`, left: `10%`, }}>
+    <div style={{
+      position: `absolute`,
+      top: `80%`,
+      left: `50%`,
+      width: `50%`,
+      zIndex: `1000`,
+    }}>
     <animated.div style={fadeLeft}>
     <h1 style={{
-      position: `relative`,
-      textAlign: `center`,
-      width: `60%`,
-      left: `100%`,
       color: `white`,
-      transform: `translate(-50%,-50%)`,
       textShadow: `2px 2px black`,
+      textAlign: `center`,
       fontFamily: `Cinzel, serif`,
       }}>Editorial peace of mind for non-fiction writers
       </h1>
       </animated.div>
-      
-</div>
-</div>
+      </div>
+      </div>
 <IndexTwo/>
     </Layout>
     )

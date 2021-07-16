@@ -34,7 +34,7 @@ export const FadeInContainer = ({ children }) => {
 const FadeInLeft = ({ isVisible, children }) => {
   const props = useSpring({
     opacity: isVisible ? 1 : 0,
-    transform: isVisible ? "translateX(0px)" : "translateX(-150px)",
+    transform: isVisible ? "translateX(0px)" : "translateX(-100px)",
     config: { 
       duration: 700, 
     },
@@ -90,19 +90,16 @@ const indexTwo = () => (
     justifyContent: `center`,
     flexWrap: `nowrap`,
     backgroundImage: `linear-gradient(to right, white , pink)`,
-    padding: `20px`,
-    margin: `1px`,
+    padding: `30px`,
   }}>
   <div style={{
     position: `relative`,
 
     width: `50%`,
-    display: `flex`,
-    justifyContent: `center`,
-    flexDirection: `column`,
     textAlign: `center`,
     fontFamily: `Cinzel, serif`,
-    zIndex: `1099999`,
+    margin: `0px`,
+    zIndex: `100`,
   }}>
       <FadeInContainer>
   <img src={Pencil} alt="" width="50px"></img>
