@@ -7,15 +7,17 @@ const footer = () => (
   <div>
   <div style={{
     position: `relative`,
-    bottom: `-20px`,
+    bottom: `-8px`,
     width: `100%`,
-    // height: `2.5rem`,
+    padding: `5px`,
+    zIndex: `1`,
+    margin: `0`,
   }}>
      Built by
           {` `}
           <a href="https://web.facebook.com/Wayne.mac.mavis/">Wayne Mac Mavis</a>,
           © {new Date().getFullYear()}
-          <div className="icons">
+          <div style={{padding: `3px`,}} className="icons">
           <a className="icon" href="https://web.facebook.com/ChantalJosephEditor" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faFacebook} color="rgb(59,89,153)" size="2x" />
           </a>

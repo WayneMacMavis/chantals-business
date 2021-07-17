@@ -25,15 +25,14 @@ select:-webkit-autofill:focus {
 .contact-container {
   flex: 0 1 700px;
   margin: auto;
-  padding: 60px;
+  padding: 0px;
 }
 
 .screen {
-  position: relative;
+  position: absolute;
   width: 60vw;
-  top: 2vh;
-  /* right: 100px; */
-  left: 50px;
+  top: 25%;
+  left: 20%;
   background: #d6d5d5e0;
   border-radius: 15px;
   box-shadow: 5px 10px 25px #1d1d1dda;
@@ -106,29 +105,37 @@ select:-webkit-autofill:focus {
 }
 
 .phone, .email {
-  left: -10px;
+  left: 0px;
   font-size: 25px;
-  margin: 5px;
+  margin: 0px;
   color: #999;
 }
 
 .phone {
   position: absolute;
-  margin-top: 1px;
+  margin-top: 0px;
   margin-right: -30px;
-  left: 15px;
+  left: 40px;
 }
 
 .fa-envelope {
   position: relative;
   margin-bottom: -10px;
   margin-right: 25px;
-  left: -189px;
-  top: 30px;
+  left: -170px;
+  top: 22px;
+}
+
+.fa-envelope:hover {
+  color: deeppink;
 }
 
 a {
   color: #888;
+}
+
+a:hover {
+  color: deeppink;
 }
 
 .app-form-group {

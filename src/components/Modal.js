@@ -29,7 +29,10 @@ const Modal = ({ closeModal }) => {
         <div className="modal">
           <div role = "button" aria-label="overlay" tabIndex={0} onClick={() => {closeModal(false)}} onKeyDown={closeModal} className="overlay"></div>
           <animated.div style={fadeDown} className="modal-content">
-  <form className="modal-form">
+  <form className="modal-form" 
+  action="https://formspree.io/f/mzbyrkql"
+  method="POST"
+  >
   <h3 className="modal-title">Submit to receive yours!</h3>
           <div>
             <li className="item">

@@ -6,6 +6,8 @@ import Nerd from "../assets/images/nerd.png"
 import Pencil from "../assets/images/pencil.png"
 import Book from "../assets/images/open-book.png"
 
+import "../components/styles/content.css"
+
 const FadeInTop = ({ isVisible, children }) => {
   const props = useSpring({
     opacity: isVisible ? 1 : 0,
@@ -88,12 +90,11 @@ const indexTwo = () => (
     width: `100vw`,
     display: `flex`,
     justifyContent: `center`,
-    flexWrap: `nowrap`,
     backgroundImage: `linear-gradient(to right, white , pink)`,
     padding: `5%`,
+    marginBottom: `1px`,
   }}>
   <div style={{
-    position: `relative`,
 
     width: `50%`,
     textAlign: `center`,
@@ -114,11 +115,8 @@ const indexTwo = () => (
   <FadeInContainerThree>
   <img src={Nerd} alt="" width="50px"></img>
   <p>The solution? Team up with a certified word nerd with expertise in your genre. If that’s marketing, academia or non-fiction, I can help!</p>
-  <a style={{
-    cursor: `pointer`,
-    textDecoration: `underline`,
-    color: `black`,
-  }} href="mailto:chantaljosepheditor@gmail.com" type="email" name="email" rel="reply-to" autoComplete="email">Email me for an obligation-free quote.</a>
+  <a className="content-link" 
+  href="mailto:chantaljosepheditor@gmail.com" type="email" name="email" rel="reply-to" autoComplete="email">Email me for an obligation-free quote.</a>
   </FadeInContainerThree>
   <Seo title="Home" />
   </div>

@@ -14,18 +14,17 @@ import "../components/styles/contact.css"
 const contactPage = () => (
   <Layout>
     <Seo title="Page five" />
-    <div style={{backgroundImage: `url(${Background})`,
-      position: `absolute`,
-      height: `100vh`,
+    <div style={{
+      backgroundImage: `url(${Background})`,
+      position: `relative`,
+      height: `85vh`,
       width: `100vw`,
-      // backgroundRepeat: `no-repeat`,
       backgroundSize: `cover`,
       top: `0px`,
-      left: `1px`,
-      right: `-300px`,
+      left: `0px`,
+      right: `0px`,
       bottom: `0px`,
       boxSizing: `border-box`,
-      minHeight: `100%`,
       zIndex: `0`,}} />
 
   <div className="contact-container">

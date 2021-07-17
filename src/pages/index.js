@@ -52,10 +52,10 @@ const IndexPage = () => {
     </video>
     <div style={{
       position: `absolute`,
-      top: `84%`,
+      top: `80%`,
       left: `50%`,
       width: `50%`,
-      zIndex: `1000`,
+      zIndex: `10`,
     }}>
     <animated.div style={fadeLeft}>
     <h1 style={{
