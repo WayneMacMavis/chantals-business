@@ -39,6 +39,7 @@
     bottom: -70%;
     font-size: 21px;
     font-weight: 500;
+    color: rgb(0,0,128);
     transform: translate(-50%,-50%);
     border: none;
     background: transparent;
@@ -48,8 +49,8 @@
 }
 
 .modal-button:hover {
-    color: deeppink;
-    border-bottom: 1px solid deeppink;
+    color: aqua;
+    border-bottom: 1px solid aqua;
 }
 
 .submitBtn {

@@ -1,8 +1,8 @@
 .content-link {
-    color: rgb(0, 0, 0);
+    color: rgb(0,0,128);
     cursor: pointer;
 }
 
 .content-link:hover {
-    color: deeppink;
+    color: aqua;
 }

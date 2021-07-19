@@ -90,7 +90,7 @@ const indexTwo = () => (
     width: `100vw`,
     display: `flex`,
     justifyContent: `center`,
-    backgroundImage: `linear-gradient(to right, white , pink)`,
+    backgroundImage: `linear-gradient(to right, white , rgb(1, 112, 112))`,
     padding: `5%`,
     marginBottom: `1px`,
   }}>
@@ -98,13 +98,14 @@ const indexTwo = () => (
 
     width: `50%`,
     textAlign: `center`,
-    fontFamily: `Cinzel, serif`,
+    fontFamily: `'Source Serif Pro', serif`,
+    fontSize: `25px`,
     margin: `0px`,
     zIndex: `100`,
   }}>
       <FadeInContainer>
   <img src={Pencil} alt="" width="50px"></img>
-  <h1 style={{fontFamily: `Cinzel, serif`, fontSize: `27px`, }}>You want your audience to focus on your message, not your mistakes. </h1>
+  <h1 style={{fontFamily: `'Source Serif Pro', serif`, fontSize: `31px`, color: `rgb(0,0,128)`,}}>You want your audience to focus on your message, not your mistakes. </h1>
     </FadeInContainer>
     <FadeInContainerTwo>
   <img src={Book} alt="" width="50px"></img>

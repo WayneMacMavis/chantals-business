@@ -59,10 +59,11 @@ const IndexPage = () => {
     }}>
     <animated.div style={fadeLeft}>
     <h1 style={{
-      color: `white`,
       textShadow: `2px 2px black`,
       textAlign: `center`,
-      fontFamily: `Cinzel, serif`,
+      fontFamily: `'Source Serif Pro', serif`,
+      fontSize: `50px`,
+      color: `rgb(0,0,128)`,
       }}>Editorial peace of mind for non-fiction writers
       </h1>
       </animated.div>
